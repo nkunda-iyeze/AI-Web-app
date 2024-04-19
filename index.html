@@ -1,0 +1,58 @@
+
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js"></script>
+</head>
+
+<body class="flex flex-col min-h-screen  bg-gray-100 font-sans antialized">
+    <!-- nav bar -->
+  <nav class="bg-blue-500 p-4 text-white flex justify-between stick">
+    <div>
+        <h1 class="text-3xl font-bold"><a href="http://127.0.0.1:5500/index.html">AI BLOG Generator</a></h1>
+    </div>
+    <div class="flex ">
+        <a href="#" class="hover:bg-white hover:text-blue-500 border border-white p-2 rounded-lg mr-1">Log Out</a>
+    </div>
+  </nav>
+
+  <!-- Main -->
+  <div class="mt-20 flex-grow container mx-auto mt-10 px-4 sm:px-0">
+    <div class="max-w-3xl bg-white rounded-lg mx-auto p-6 shadow-md transition transition-transform transform hover:scale-105 flex flex-col">
+        <!-- introduction -->
+        <div class="text-center">
+            <h2 class="text-2xl font-bold mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, nesciunt.</h2>
+            <p class="text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium deleniti obcaecati explicabo. Maxime beatae error nisi, harum labore eum, hic dolorum natus incidunt magni, vel odit ipsam architecto dignissimos! Similique.</p>
+        </div>
+        <!-- Youtube section -->
+        <div>
+            <h2 class="text-xl font-semibold mb-4"> Enter Youtube Link</h2>
+            <div class="flex space-x-4">
+                <input type="url" id="youtubeLink" placeholder="Place youtubeLink here........" class="flex-grow p-4 rounded-l-lg border border-blue-400">
+                <button id="generateBlogButton" class="bg-blue-500 rounded-r-lg px-4 py-2 text-white font-semibold">Generate</button>
+            </div>
+        </div>
+         <!-- Section for loading circle -->
+          <div class="load" id="loading_circle">
+
+          </div>
+        <!-- generated Blog Display -->
+        <section class="my-10 flex-grow">
+            <h2 class="text-xl  font-semibold"> Generated blog posts</h2>
+            <div id="blogContent" class= "mt-4 space-y-4 text-gray-400">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum exercitationem reiciendis esse dolor nostrum minus.
+            </div>
+        </section>
+    </div>
+  </div>
+  <!-- Footer -->
+  <footer class="text-center my-8 text-black">
+    Code with shalom
+  </footer>
+</body>
+</html>
